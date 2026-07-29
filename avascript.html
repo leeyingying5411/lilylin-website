@@ -1,0 +1,9 @@
+avascript
+document.getElementById('clickMe').addEventListener('click', function() {
+  // 跳出歡迎訊息
+  alert('你好，奈奈！祝你網頁製作順利，日文學習愉快！🌸');
+  
+  // 切換無障礙狀態 (aria-pressed)
+  const isPressed = this.getAttribute('aria-pressed') === 'true';
+  this.setAttribute('aria-pressed', !isPressed);
+});

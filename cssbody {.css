@@ -1,0 +1,47 @@
+cssbody {
+    background-color: #f4f7f6;
+    font-family: "Microsoft JhengHei", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    text-align: center;
+    max-width: 400px;
+}
+
+.avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+h1 { margin: 15px 0 5px; color: #333; }
+.title { color: #666; font-size: 14px; }
+h2 { font-size: 18px; color: #007BFF; margin-top: 20px; }
+p { color: #444; font-size: 14px; line-height: 1.6; }
+
+.btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: #007BFF;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+}
+.btn:hover { background: #0056b3; }
+const btn = document.getElementById("clickMe")
+btn.addEventListener("click", function () {
+
+  alert("你點到我啦！");
+
+});
